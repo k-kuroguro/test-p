@@ -1,0 +1,25 @@
+{
+   "name": "@k_kuroguro/cctweaked-tstl",
+   "version": "1.0.0",
+   "license": "MIT",
+   "type": "commonjs",
+   "scripts": {
+      "lint": "eslint \"src/**/*.ts\" \"tests/**/*.ts\"",
+      "fmt": "eslint --fix \"src/**/*.ts\" \"tests/**/*.ts\"",
+      "build": "tsdown",
+      "tstl": "npm run build && tstl -p tests/tstl.json",
+      "test": "npm run tstl && sh tests/test.sh"
+   },
+   "files": [
+      "dist/index.cjs"
+   ],
+   "main": "dist/index.cjs",
+   "devDependencies": {
+      "@eslint/js": "^10.0.1",
+      "eslint": "^10.2.1",
+      "tsdown": "^0.21.10",
+      "typescript": "6.0.2",
+      "typescript-eslint": "^8.59.0",
+      "typescript-to-lua": "1.36.0"
+   }
+}

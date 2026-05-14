@@ -1,0 +1,17 @@
+{
+   "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+   "compilerOptions": {},
+   "tstl": {
+      "luaLibImport": "inline",
+      "luaBundle": "test.lua",
+      "luaBundleEntry": "test.ts",
+      "luaPlugins": [
+         {
+            "name": "../dist/index.cjs"
+         }
+      ]
+   },
+   "include": [
+      "./**/*.ts"
+   ]
+}
