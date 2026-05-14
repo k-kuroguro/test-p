@@ -22,6 +22,11 @@ jobs:
           node-version: 25
 
       - run: npm ci
+      - name: Install CraftOS-PC 2
+        run: |
+          curl -sL https://github.com/MCJack123/craftos2/releases/download/v2.8.3/CraftOS-PC.x86_64.AppImage -o craftos
+          chmod +x craftos
+
       - run: npm run test
       - run: npm run build
 
