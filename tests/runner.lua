@@ -8,6 +8,8 @@ local function fail(message, details)
 end
 
 local function run()
+   print("======== START ========")
+
    local chunk, loadErr = loadfile(target)
    if chunk == nil then
       fail("Syntax/load error in generated test.", loadErr)
