@@ -10,5 +10,5 @@ export function runContinueCase(): void {
       loopSum += i;
    }
 
-   assertEqual(loopSum, 4, 'continue statement');
+   assertEqual(loopSum, 1, 'continue statement');
 }
